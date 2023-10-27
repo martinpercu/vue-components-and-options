@@ -14,6 +14,11 @@ npm install
 ```sh
 npm run dev
 ```
+- Something to see is also the command
+```sh
+vue ui
+```
+- This is a manager with ui for vue project
 
 
 
