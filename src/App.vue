@@ -1,35 +1,51 @@
-<script setup>
-// import HelloWorld from './components/HelloWorld.vue';
-import { defineAsyncComponent } from 'vue';
+<script>
+import Menu from './components/Menu.vue';
 
-const HelloWorld = defineAsyncComponent(() => import('./components/HelloWorld.vue'));
+export default {
+  name: "App",
+  components: { Menu },
+  data() {
+    return {
+      showed: false
+    }
+  }
+}
 
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
-  <component v-bind:is="somethingNew"></component>
+  <button @click="showed = !showed">Menu</button>
+  <transition name="fadeMenu">  
+    <Menu v-show="showed" />
+  </transition>
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.fadeMenu-enter-from {
+  border: 2px solid green;
+
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.fadeMenu-enter-active {
+  border: 2px solid blue;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+.fadeMenu-enter-to {
+  border: 2px solid red;
+}
+.fadeMenu-leave-from {
+  border: 2px solid rgb(47, 78, 75);
+}
+.fadeMenu-leave-active {
+  border: 2px solid rgb(14, 133, 108);
+}
+.fadeMenu-leave-to {
+  border: 2px solid rgb(182, 89, 192);
+}
+.fadeMenu-leave-active,
+.fadeMenu-enter-active {
+  transition: opacity 1.4s ease;
+}
+.fadeMenu-leave-to,
+.fadeMenu-enter-from {
+  opacity: 0;
 }
 </style>

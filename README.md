@@ -24,6 +24,14 @@ vue ui
 - In App.vue will create a const "HelloWorld" using defineAsyncComponent. This will charge in an async way this component. So will first charge the page and then will charge the component.
 - I left commented the line 2 where the components is imported directly. (just to see the difference)
 
+## Transicions
+- In App.vue create one button with boolean on click. (showed). To switch showed or not a menu.
+- New file Menu.vue with a simple menu.
+- In App.vue add a new <Menu component with v-show="showed">
+- In App template add <transition>. Then inside put the <Menu> Component
+- Name the thansition (this case fadeMenu)
+- Add styles name starting with fadeMenu + enter or leave + from or active or leave. 
+- Check the lines 43 to 50 in App.vue.
 
 
 
