@@ -41,6 +41,9 @@ vue ui
 - The modal itself in a div. Then all this div inside a <teleport to="body">.
 - With this all inside the <teleports> is already moved to the css class body. (check it in the browser inspector.) 
 
+## Lifecycle
+- I left the last App.vue saved as App-old-02.vue.
+- In App.vue just add : beforeCreate() + created() + mounted()  with a console.log to see what is getting in each moment of the lifecycle of the element App.
 
 
 
