@@ -1,14 +1,9 @@
 <script>
-import one_example_01 from "../src/mixins/example_01";
-import another_example from "../src/mixins/example_02";
-
 export default {
   name: "App",
-  mixins: [one_example_01, another_example],
   data() {
     return {
-      text: "bonjour Le Monde",
-      something2: "this is in the app.vue in line 11 , if you comment this line I will show the var in the MIXIN ! ! !"
+      text: "bonjour Le Monde"
     }
   },
   beforeCreate() {
@@ -26,8 +21,6 @@ export default {
 
 <template>
   <div>{{ text }}</div>
-  <div> {{  something }}</div>
-  <div style="font-weight: 800;"> {{  something2 }}</div>
   
 </template>
 
