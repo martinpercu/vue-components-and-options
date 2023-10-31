@@ -59,8 +59,8 @@ vue ui
 # Composition API
 ## Lifecycle in Composition API.
 - I left the last App.vue saved as App-old-04.vue.
-- Create a component Home_01.vue
-- In Home_01.vue we will use the "setup()" this will replace beforeCreated and created. So all the rest in lifecycle works the same BUT only add "on". So as example onMounted().
+- Create a component Home.vue
+- In Home.vue we will use the "setup()" this will replace beforeCreated and created. So all the rest in lifecycle works the same BUT only add "on". So as example onMounted().
 
 
 
