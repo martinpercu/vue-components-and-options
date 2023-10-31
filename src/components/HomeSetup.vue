@@ -1,19 +1,25 @@
 <script setup>
 
-import { ref, reactive } from 'vue';
-const text = ref("This is the value text ");
-const number = ref(4);
-const counter = ref(0);
+import { ref, reactive, watch } from 'vue';
+const counter = ref(10);
 const counterObject = reactive({ counter: 20 });
 
-setInterval(() => counter.value++, 650);
-setInterval(() => counterObject.counter++, 1750);
+setInterval(() => counter.value++, 1250);
+setInterval(() => counterObject.counter++, 750);
+
+watch(counter, (newValue, oldValue) => {
+    console.log(newValue, oldValue);
+});
+
+watch(() => counterObject.counter, (newValue, oldValue) => {
+    console.log(newValue, oldValue , "this is counterObject");
+});
 
 </script>
 
+
+
 <template>
-    <div>{{ text }}</div>
-    <div>{{ number }}</div>
-    <div>Counter each 650: {{ counter }}</div>
+    <div>Counter each 1250: {{ counter }}</div>
     <div>Counter Object using "reactive"  ==>  {{ counterObject }}</div>
 </template>
