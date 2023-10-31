@@ -1,16 +1,17 @@
 <script>
+import Home_01 from './components/Home_01.vue';
 
+export default {
+  name: "App",
+  components: {
+    Home_01
+  }
+}
 </script>
 
 <template>
-  <div>{{ text }}</div>
-  <div> {{  something }}</div>
-  <div style="font-weight: 800;"> {{  something2 }}</div>
-  
+  <Home_01></Home_01>  
 </template>
 
-
-
 <style scoped>
-
 </style>
