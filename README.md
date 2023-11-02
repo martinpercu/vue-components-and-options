@@ -79,7 +79,16 @@ vue ui
 - Just import computed from vue.
 - Just an example how to use the computed().
 
-
+## Props
+- I left the last Home.vue and HomeSetup.vue as Home_04.vue and HomeSetup_04.vue
+- In the App.vue inside the <Home> and the <HomeSetup>. We are sending first-name and last-name.
+- Then to receive it we use "props". (props is a JSON).
+- Then define the props object with ===> firstName: String, + lastName: String.
+- In HomeSetup we define de props with this sintax ===> const props = defineProps({}).
+- In Home.vue and HomeSetup.vue import "toRefs" from vue. (toRef very important)
+- Then a const { firstName, lastName } = toRefs(props); With this we have __firstName and lastName reactive from the parent (App.vue)__.
+- IMPORTANT!! From the App.vue in <Home> and <HomeSetup> we sending using __first-name__ BUT in the props we use it with __firstName__. 
+- I left the old lines with const firstName and lastname commented.
 
 
 

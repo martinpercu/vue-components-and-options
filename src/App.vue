@@ -13,9 +13,10 @@ export default {
 
 <template>
   <div class="boldText"><br>export default<br></div>
-  <Home></Home>
+  <Home first-name="Pedro" last-name="Mendoza"></Home>
+
   <div class="boldText"><br><br>script setup<br></div>
-  <HomeSetup></HomeSetup>
+  <HomeSetup first-name="Peter" last-name="Marshall"></HomeSetup>
 
 </template>
 
@@ -23,6 +24,7 @@ export default {
 .boldText {
   font-family: 'Courier New', Courier, monospace;
   font-weight: 800;
-  font-size: larger;
+  font-size: x-large;
+  padding-bottom: 5px;
 }
 </style>
