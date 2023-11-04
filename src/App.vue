@@ -13,7 +13,7 @@ export default {
 
 <template>
   <div class="boldText"><br>export default<br></div>
-  <Home first-name="Pedro" last-name="Mendoza"></Home>
+  <Home first-name="Pedro" last-name="Mendoza" anAttribute="whatever"></Home>
 
   <div class="boldText"><br><br>script setup<br></div>
   <HomeSetup first-name="Peter" last-name="Marshall"></HomeSetup>

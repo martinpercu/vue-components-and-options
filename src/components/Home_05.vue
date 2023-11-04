@@ -1,24 +1,19 @@
 <script>
-import { toRefs, computed } from 'vue';
+import { ref, toRefs, computed } from 'vue';
 
 export default {
   props: {
     firstName: String,
     lastName: String,    
   },
-  setup(props, { expose }) {
-  // setup(props, context) {
-
-    // console.log(context);
+  setup(props) {
+    // const firstName = ref("Naty");
+    // const lastName = ref("Gimenez");
 
     const { firstName, lastName } = toRefs(props);
 
     const fullName = computed(() => {
       return `${firstName.value} ${lastName.value}`;
-    });
-
-    expose({
-      fullName,
     });
 
     return {
