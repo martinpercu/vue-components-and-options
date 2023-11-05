@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed, toRefs, inject, watch } from 'vue';
+import { computed, toRefs, inject } from 'vue';
 
 const props = defineProps({
     firstName: String,
@@ -14,14 +14,6 @@ const fullName = computed(() => {
 
 const username = inject("theUsername");
 
-const myBtn = ref(null);
-
-console.log(myBtn.value);
-
-watch(myBtn, (theValue) => {
-    console.log(theValue);
-})
-
 </script>
 
 
@@ -29,6 +21,5 @@ watch(myBtn, (theValue) => {
     <div>First Name: {{ firstName }}</div>
     <div>Last Name: {{ lastName }}</div>
     <div>Full Name: {{ fullName }}</div>
-    <div>NICK Name: {{ username }}</div>
-    <button ref="myBtn">Click Me Setup</button>
+  <div>NICK Name: {{ username }}</div>
 </template>

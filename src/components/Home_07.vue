@@ -1,5 +1,5 @@
 <script>
-import { ref, toRefs, computed, inject, watch } from 'vue';
+import { toRefs, computed, inject } from 'vue';
 
 export default {
   props: {
@@ -20,20 +20,11 @@ export default {
       fullName,
     });
 
-    const myBtn = ref(null);
-
-    console.log(myBtn.value);
-
-    watch(myBtn, (theValue) => {
-      console.log(theValue);
-    })
-
     return {
       firstName,
       lastName,
       fullName,
-      username,
-      myBtn
+      username
     }
   }
 }
@@ -44,5 +35,4 @@ export default {
   <div>Last Name: {{ lastName }}</div>
   <div>Full Name: {{ fullName }}</div>
   <div>NICK Name: {{ username }}</div>
-  <button ref="myBtn">Click Me</button>
 </template>

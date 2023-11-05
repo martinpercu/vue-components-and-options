@@ -104,6 +104,13 @@ vue ui
 - In Home and HomeSetup import { inject } from 'vue'. Then create a const "username" using inject() from the App.vue.
 - Then add this new const in the template.
 
+## Template-Ref
+- I left the last Home.vue and HomeSetup.vue as Home_07.vue and HomeSetup_07.vue
+- I left the last App.vue as App-old-05.vue
+- In Home and Home Setup import ref and watch.
+- In Home and Home Setup add in the template a button with a ref ===> myBtn.
+- Add a const myBtn with ref(null). (is needed to add null to instance at first time the const myBtn, then once started the const myBtn will be the button).
+- Using a watch we will get confirm the const myBtn once the component charged will be the <button>.
 
 
 
