@@ -1,13 +1,17 @@
 <script>
 import Home from './components/Home.vue';
 import HomeSetup from './components/HomeSetup.vue';
+import { provide } from 'vue';
 
 export default {
   name: "App",
   components: {
     Home,
     HomeSetup
-}
+  },
+  setup() {
+    provide("theUsername", "PeteMar");
+  }
 }
 </script>
 

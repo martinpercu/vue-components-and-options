@@ -97,6 +97,12 @@ vue ui
 - As example from App.vue I'm sending an attrs. We can see what it is in the console. (I put a console log in the Home.vue, commented).
 - Also to expose something the second argument shoud be {expose}. Then just before the return add expose({}) with the list of const we want to "expose".
 
+## Provide-Inject
+- I left the last Home.vue and HomeSetup.vue as Home_06.vue and HomeSetup_06.vue
+- In App.vue import { provide } from 'vue';
+- Inside the export default add the provide(). This use 2 argument. 1st the name 2nd the value.
+- In Home and HomeSetup import { inject } from 'vue'. Then create a const "username" using inject() from the App.vue.
+- Then add this new const in the template.
 
 
 
