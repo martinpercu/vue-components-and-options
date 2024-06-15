@@ -20,6 +20,16 @@ vue ui
 ```
 - This is a manager with ui for vue project
 
+## Async Components
+- In App.vue will create a const "HelloWorld" using defineAsyncComponent. This will charge in an async way this component. So will first charge the page and then will charge the component.
+- I left commented the line 2 where the components is imported directly. (just to see the difference)
+
+
+
+
+
+
+
 
 
 
