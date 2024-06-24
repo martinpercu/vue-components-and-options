@@ -31,11 +31,15 @@ vue ui
 - In App template add <transition>. Then inside put the <Menu> Component
 - Name the thansition (this case fadeMenu)
 - Add styles name starting with fadeMenu + enter or leave + from or active or leave. 
-- Check the lines 43 to 50 in App.vue.
+- Check the lines 43 to 50 in App.vue. (App-old-01.vue)
 
 
-
-
+## Teleports
+- I left the last App.vue saved as App-old-01.vue.
+- In App.vue import a new component "Modal"
+- Create the Modal.vue then just add a modal + a button to show it.
+- The modal itself in a div. Then all this div inside a <teleport to="body">.
+- With this all inside the <teleports> is already moved to the css class body. (check it in the browser inspector.) 
 
 
 
