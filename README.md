@@ -45,8 +45,15 @@ vue ui
 - I left the last App.vue saved as App-old-02.vue.
 - In App.vue just add : beforeCreate() + created() + mounted()  with a console.log to see what is getting in each moment of the lifecycle of the element App.
 
-
-
+## Mixins
+- I left the last App.vue saved as App-old-03.vue.
+- The mixins is a way to "keep code to use anywhere" something like.
+- Create a folder mixins
+- Then a js file (this case will be example_01.js + example)
+- In App.vue import this file.
+- Add it with this format: "mixins: [example01, example02]",
+- IMPORTANT if we have the same name variable in the mixin and in the component will use the var from the component.
+- The Mixins are really good if we want to do "same something" with several component but is not easy to know what there is in the mixin. (With Vue 3 works much better with options and Composition API)
 
 
 
