@@ -56,6 +56,20 @@ vue ui
 - The Mixins are really good if we want to do "same something" with several component but is not easy to know what there is in the mixin. (With Vue 3 works much better with options and Composition API)
 
 
+# Composition API
+## Lifecycle in Composition API.
+- I left the last App.vue saved as App-old-04.vue.
+- Create a component Home.vue
+- In Home.vue we will use the "setup()" this will replace beforeCreated and created. So all the rest in lifecycle works the same BUT only add "on". So as example onMounted().
+
+
+
+
+
+
+
+
+
 
 
 
