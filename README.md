@@ -63,6 +63,10 @@ vue ui
 - In Home.vue we will use the "setup()" this will replace beforeCreated and created. So all the rest in lifecycle works the same BUT only add "on". So as example onMounted().
 
 
+## Ref and Reactive
+- I left the last Home.vue saved as Home_01.vue.
+- In Home.vue we use ref for vars and reactive for objects. Then using "export defautl" using setup() we start all the login. Here using "return" we send the values.
+- IMPORTANT in HomeSetup.vue we have the same BUT using <script setup> way. This is much more clear syntax.
 
 
 
