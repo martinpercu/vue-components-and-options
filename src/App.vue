@@ -12,11 +12,17 @@ export default {
 </script>
 
 <template>
-  <Home></Home>  
-  <div><br><br></div>
+  <div class="boldText"><br>export default<br></div>
+  <Home></Home>
+  <div class="boldText"><br><br>script setup<br></div>
   <HomeSetup></HomeSetup>
 
 </template>
 
 <style scoped>
+.boldText {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 800;
+  font-size: larger;
+}
 </style>

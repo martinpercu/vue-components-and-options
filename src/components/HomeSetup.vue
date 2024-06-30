@@ -1,19 +1,18 @@
 <script setup>
+import { ref, computed } from 'vue';
 
-import { ref, reactive } from 'vue';
-const text = ref("This is the value text ");
-const number = ref(4);
-const counter = ref(0);
-const counterObject = reactive({ counter: 20 });
+const firstName = ref("Naty");
+const lastName = ref("Gimenez");
 
-setInterval(() => counter.value++, 650);
-setInterval(() => counterObject.counter++, 1750);
+const fullName = computed(() => {
+    return `${firstName.value} ${lastName.value}`;
+});
 
 </script>
 
+
 <template>
-    <div>{{ text }}</div>
-    <div>{{ number }}</div>
-    <div>Counter each 650: {{ counter }}</div>
-    <div>Counter Object using "reactive"  ==>  {{ counterObject }}</div>
+    <div>First Name: {{ firstName }}</div>
+    <div>Last Name: {{ lastName }}</div>
+    <div>Full Name: {{ fullName }}</div>
 </template>
