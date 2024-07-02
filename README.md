@@ -74,6 +74,11 @@ vue ui
 - watch receive 2 parameters ===> first the value we want to "watch" and second the function to do with this value. In this case we will watch the setIntervals.
 - IMPORTANT when the first value is an object in the watch we must get the value using a function.
 
+## Computed
+- I left the last Home.vue and HomeSetup.vue as Home_03.vue and HomeSetup_03.vue
+- Just import computed from vue.
+- Just an example how to use the computed().
+
 
 
 
