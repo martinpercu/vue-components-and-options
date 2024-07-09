@@ -90,6 +90,12 @@ vue ui
 - IMPORTANT!! From the App.vue in <Home> and <HomeSetup> we sending using __first-name__ BUT in the props we use it with __firstName__. 
 - I left the old lines with const firstName and lastname commented.
 
+## Context
+- I left the last Home.vue and HomeSetup.vue as Home_05.vue and HomeSetup_05.vue
+- In Home.vue in the setup() the 2nd argument is the "context"
+- In context we get attrs + emit + expose + slots.
+- As example from App.vue I'm sending an attrs. We can see what it is in the console. (I put a console log in the Home.vue, commented).
+- Also to expose something the second argument shoud be {expose}. Then just before the return add expose({}) with the list of const we want to "expose".
 
 
 

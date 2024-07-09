@@ -1,5 +1,5 @@
 <script setup>
-import { computed, toRefs } from 'vue';
+import { ref, computed, toRefs } from 'vue';
 
 const props = defineProps({
     firstName: String,
@@ -7,6 +7,9 @@ const props = defineProps({
 })
 
 const { firstName, lastName } = toRefs(props);
+
+// const firstName = ref("Naty");
+// const lastName = ref("Gonzalez");
 
 const fullName = computed(() => {
     return `${firstName.value} ${lastName.value}`;
