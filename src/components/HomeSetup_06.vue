@@ -1,5 +1,5 @@
 <script setup>
-import { computed, toRefs, inject } from 'vue';
+import { computed, toRefs } from 'vue';
 
 const props = defineProps({
     firstName: String,
@@ -12,8 +12,6 @@ const fullName = computed(() => {
     return `${firstName.value} ${lastName.value}`;
 });
 
-const username = inject("theUsername");
-
 </script>
 
 
@@ -21,5 +19,4 @@ const username = inject("theUsername");
     <div>First Name: {{ firstName }}</div>
     <div>Last Name: {{ lastName }}</div>
     <div>Full Name: {{ fullName }}</div>
-  <div>NICK Name: {{ username }}</div>
 </template>
